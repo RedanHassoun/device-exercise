@@ -6,6 +6,7 @@ import { SelectBlackboxService } from './services/select-blackbox.service';
 import { HttpModule } from '@angular/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import {MatCheckboxModule} from '@angular/material';
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatCheckboxModule
   ],
