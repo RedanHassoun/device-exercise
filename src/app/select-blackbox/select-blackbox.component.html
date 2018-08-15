@@ -1,0 +1,10 @@
+<ul>    
+  <li *ngFor="let currGroup of groupList"> 
+    {{currGroup.name}}  
+    <ul>    
+      <li *ngFor="let currDevice of currGroup.getDeviceList()"> 
+        <mat-checkbox [(ngModel)]="currDevice.checked">{{currDevice.name}}</mat-checkbox> 
+      </li>
+    </ul> 
+  </li>
+</ul>
