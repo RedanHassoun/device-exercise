@@ -4,6 +4,8 @@ import { AppComponent } from './app.component';
 import { SelectBlackboxComponent } from './select-blackbox/select-blackbox.component';
 import { SelectBlackboxService } from './services/select-blackbox.service';
 import { HttpModule } from '@angular/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatCheckboxModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { HttpModule } from '@angular/http';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    BrowserAnimationsModule,
+    MatCheckboxModule
   ],
   providers: [SelectBlackboxService],
   bootstrap: [AppComponent]
